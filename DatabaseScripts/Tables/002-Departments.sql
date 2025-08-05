@@ -1,0 +1,4 @@
+CREATE TABLE Departments(
+    `Id` int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `Name` NVARCHAR(127) NOT NULL
+);

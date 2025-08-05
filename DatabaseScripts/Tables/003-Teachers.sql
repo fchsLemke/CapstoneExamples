@@ -1,0 +1,7 @@
+CREATE TABLE Teachers(
+    `Id` int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `CreateTime` DATETIME DEFAULT CURRENT_TIMESTAMP,
+    `Name` NVARCHAR(127) NOT NULL,
+    `Department` INT NOT NULL,
+    FOREIGN KEY (`Department`) REFERENCES Departments(`Id`)
+);

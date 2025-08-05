@@ -1,0 +1,3 @@
+ALTER TABLE Classes
+ADD COLUMN `TeacherId` INT,
+ADD FOREIGN KEY (`TeacherId`) REFERENCES Teachers(`Id`)
