@@ -11,7 +11,7 @@ BEGIN
         AND (table_schema = DatabaseName)
         AND (index_name = IndexName)) > 0,
         'SELECT 1', -- Column exists, do nothing
-        CONCAT('ALTER TABLE ', TableName, ' ADD Index ', IndexName, '(', `Columns`,")")
+        CONCAT('ALTER TABLE ', DatabaseName, '.', TableName, ' ADD Index ', IndexName, '(', `Columns`,")")
     ));
     PREPARE `statement` FROM @statement;
     EXECUTE `statement`;

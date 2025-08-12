@@ -10,7 +10,7 @@ BEGIN
         AND (table_schema = DatabaseName)
         AND (column_name = ColumnName)) = 0,
         'SELECT 1', -- Column exists, do nothing
-        CONCAT('ALTER TABLE ', TableName, ' DROP ', ColumnName)
+        CONCAT('ALTER TABLE ', DatabaseName, '.', TableName, ' DROP ', ColumnName)
     ));
     PREPARE `statement` FROM @statement;
     EXECUTE `statement`;

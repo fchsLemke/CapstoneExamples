@@ -11,7 +11,7 @@ BEGIN
         AND (table_schema = DatabaseName)
         AND (column_name = ColumnName)) > 0,
         'SELECT 1', -- Column exists, do nothing
-        CONCAT('ALTER TABLE ', TableName, ' ADD ', ColumnName, ' ', ColumnType)
+        CONCAT('ALTER TABLE ', DatabaseName, '.', TableName, ' ADD ', ColumnName, ' ', ColumnType)
     ));
     PREPARE `statement` FROM @statement;
     EXECUTE `statement`;
