@@ -16,6 +16,7 @@ public class ActorRepository
         var id = connection.Insert(actor);
         actor.Actor_Id = (int) id;
         return actor;
+        //capstone students rule
     }
     
     public Actor UpdateActor(Actor actor)
