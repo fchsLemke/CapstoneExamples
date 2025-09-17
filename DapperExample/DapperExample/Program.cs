@@ -6,15 +6,18 @@ internal static class Program
     public static void Main(string[] args)
     {
         var repo = new ActorRepository();
-
+        var service = new ActorService(repo);
+        
+        
         var test = new Actor
         {
-            First_Name = "Strong",
+            Actor_Id = 2,
+            First_Name = "Weak",
             Last_Name = "Man",
             Last_Update = DateTime.Now
         };
 
-        test = repo.CreateActor(test);
+        test = service.UpdateActor(test);
         
         Console.WriteLine(test.Actor_Id);
     }
