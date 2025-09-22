@@ -1,0 +1,15 @@
+meta {
+  name: Get Actors
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:5105/actor/202
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

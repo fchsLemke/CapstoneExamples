@@ -1,0 +1,22 @@
+meta {
+  name: Create Actor
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:5105/actor
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "First_Name":"Api",
+    "Last_Name":"Example"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
