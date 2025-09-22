@@ -11,6 +11,8 @@ public class ActorService
     
     public Actor CreateActor(Actor actor)
     {
+        if (actor.Last_Update == null)
+            actor.Last_Update = DateTime.Now;
         return _actorRepository.CreateActor(actor);
     }
     
