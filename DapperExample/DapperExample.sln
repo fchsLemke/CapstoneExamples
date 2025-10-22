@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperExample", "DapperExam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{EA299AAE-C3B2-461E-B753-62E6E042C05C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication2", "WebApplication2\WebApplication2.csproj", "{31D0A528-02EB-4A87-A5E9-25C32006210E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{EA299AAE-C3B2-461E-B753-62E6E042C05C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA299AAE-C3B2-461E-B753-62E6E042C05C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA299AAE-C3B2-461E-B753-62E6E042C05C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31D0A528-02EB-4A87-A5E9-25C32006210E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31D0A528-02EB-4A87-A5E9-25C32006210E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31D0A528-02EB-4A87-A5E9-25C32006210E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31D0A528-02EB-4A87-A5E9-25C32006210E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
